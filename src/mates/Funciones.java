@@ -1,5 +1,6 @@
 package mates;
 import java.util.ArrayList;
+import java.util.function.DoubleSupplier;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -76,6 +77,21 @@ public class Funciones {
         .map(i -> lista1.get(i) * lista2.get(i)).sum();
     }
 
+    //EJERCICIO 12 Elemento n-ésimo de la sucesión fibinacci.
+    public static int fibo(int n) {
+        return IntStream.range(0, n)
+        .reduce(0, (a, b) -> a + b);
+    }
+   // Ejercicio 13 Calcule el cociente entre el decimo tercer y el decimo segundo elementode la sucesión de Fibonacci,
+    // y compare el resultado con 1+√52 .
+    public static DoubleSupplier cociente = () -> {
+        int fibonacciNMinus1 = fibo(13);
+        int fibonacciNMinus2 = fibo(12);
+        return (double) fibonacciNMinus1 / fibonacciNMinus2;
+    };
 
-
+    // Ejercicio 14 Averigüe la relación entre la sucesión de Fibonacci y la razón áurea.
+    public static DoubleSupplier razonAurea = () -> (1 + Math.sqrt(5)) / 2;
 }
+
+

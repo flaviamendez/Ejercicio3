@@ -24,7 +24,7 @@ public class Principal{
         listaP.add(9);
         listaP.add(7);
         
-
+        
         System.out.println("1. Suma: " + Funciones.suma(10));
         System.out.println("2. Factorial: " + Funciones.factorial(5));
         System.out.println("3. Potencia: " + Funciones.potencia(2, 3));
@@ -34,9 +34,11 @@ public class Principal{
         System.out.println("7. Suma de pares: " + Funciones.sumaPar(9));
         System.out.println("8. suma de los elementos pares de una lista de enteros " + Funciones.sumaParLista(lista2));
         System.out.println("9. Lista de números >= 2 obtener otra lista solo con los pares. " + Funciones.listaPares(listaP));
-        System.out.println("10. lista de los primeros números pares hasta n asumiendo n ≥ 2 " + Funciones.listaDeSoloPar(10));
-
-
+        System.out.println("10. lista de los primeros números pares hasta n => que 2 es " + Funciones.listaDeSoloPar(10));
+        System.out.println("11. Producto escalar de dos listas de números no vacías y del mismo tamaño es " + Funciones.listaDeSoloPar(10));
+        System.out.println("12. Sentencia n-ésima de la serie fibonacci de 5 es " + Funciones.fibo(5));
+        System.out.println("13. Cociente entre el decimo tercer y el decimo segundo elemento de la sucesión de Fibonacci: " + Funciones.cociente.getAsDouble());
+        System.out.println("14. Razón Áurea: " + Funciones.razonAurea.getAsDouble());
 
 
     }
